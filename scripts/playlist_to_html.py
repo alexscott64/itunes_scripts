@@ -67,7 +67,7 @@ def convert_playlist_to_html(ifile,ofile,ltype,etype,fmt):
 
     # Read in a comma delim file (csv)
     data = pd.read_csv(ifile, 
-                        delim_whitespace = False, 
+                        delim_whitespace = False,
                         header = None,
                         names = colnames)
                      
@@ -133,7 +133,6 @@ def main (argv):
 
     inputfile = ''
     outputfile = ''
-
 
     try:
         opts, args = getopt.getopt(argv,"hdi:o:lef",["help","debug","ifile=","ofile=","list=","element=","fmt="])

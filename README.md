@@ -14,7 +14,15 @@ does are below.
 
 ## Convert an iTunes playlist to an HTML list `playlist_to_html_list`
 
-iTunes will export a playlist as a garbled `.txt` file. It sucks. To try and ease the pain
+iTunes will export a playlist as a garbled `.txt` file. It sucks. The first step
+that should happen (before running this script) is to convert this`.txt` file
+into a `.csv` file. This can be done using Excel, or maybe some other program.
+
+To be honest, the text files are formatted so poorly, that it was impossible
+trying to convert it via Python. If someone has a way to do it I'd gladly merge it
+into this script. 
+
+### Running the script
 I've made a script that will run through this playlist and give you back a nicely formatted
 HTML list in the following format:
 
