@@ -89,6 +89,7 @@ def convert_playlist_to_html(ifile,ofile,ltype,etype,fmt):
         clean_track_str = str(clean_track)
         if(debug):
             print 'clean_format_string: ',clean_track_str
+            continue
         output.write(clean_track_str)
         output.write(etag_end + "\n")
 
